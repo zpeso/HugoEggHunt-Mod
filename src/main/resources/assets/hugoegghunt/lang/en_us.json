@@ -1,0 +1,7 @@
+{
+  "key.hugoegghunt.toggle": "Toggle egg hunt overlay",
+  "key.hugoegghunt.settings": "Egg hunt settings",
+  "text.hugoegghunt.toggled_on": "Egg hunt overlay enabled",
+  "text.hugoegghunt.toggled_off": "Egg hunt overlay paused",
+  "text.hugoegghunt.found_flash": "✓ Halloween skull found!"
+}

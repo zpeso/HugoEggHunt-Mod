@@ -12,7 +12,6 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import w2d1.hugoegghunt.Hugoegghunt;
 
 @Mixin(LevelRenderer.class)
 public abstract class LevelRendererMixin {
@@ -27,6 +26,6 @@ public abstract class LevelRendererMixin {
         PoseStack matrixStack = new PoseStack();
         matrixStack.mulPose(positionMatrix);
         float tickProgress = tickCounter.getGameTimeDeltaPartialTick(false);
-        Hugoegghunt.INSTANCE.hookRenderEvent(matrixStack, tickProgress);
+        w2d1.hugoegghunt.context.RenderUtils.renderSkullTargets(matrixStack, tickProgress);
     }
 }

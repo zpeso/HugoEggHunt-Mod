@@ -2,8 +2,8 @@
 	"schemaVersion": 1,
 	"id": "hugoegghunt",
 	"version": "${version}",
-	"name": "hugoegghunt",
-	"description": "HugoSMP Egg Hunt Mod by w2d1",
+	"name": "Hugo Egg Hunt",
+	"description": "HugoSMP Egg Hunt helper: find halloween skulls with clean outlines, capped tracers, HUD and a settings screen. By w2d1",
 	"authors": [
 		"w2d1"
 	],
@@ -13,10 +13,13 @@
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/hugoegghunt/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"main": [
 			"w2d1.hugoegghunt.Hugoegghunt"
+		],
+		"client": [
+			"w2d1.hugoegghunt.client.SkullHuntClient"
 		]
 	},
 	"mixins": [
